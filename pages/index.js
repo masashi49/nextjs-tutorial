@@ -14,6 +14,7 @@ export default function Home () {
         <p><a href="https://github.com/masashi49">js太郎のGithub</a>
         </p>
         <Link href="/posts/first-post"><a>first-page</a></Link>
+        次は<a href="https://qiita.com/thesugar/items/01896c1faa8241e6b1bc">ここから</a>スタートです
       </section>
     </Layout>
   )
