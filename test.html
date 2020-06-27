@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Document</title>
+    </head>
+
+    <body>
+        test
+    </body>
+
+    <script>
+
+
+        var array = [ 1, 2, 3, 45, 6, 80, 40, 120 ];
+
+        array.sort(
+            function ( a, b ) {
+                if ( a < b ) {
+                    return -1
+                } else {
+                    return 1
+                };
+            }
+        );
+
+        // [40, 80, 120]
+        console.log( array );
+
+    </script>
+
+</html>

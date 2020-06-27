@@ -5,9 +5,11 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'ジェイエス太郎'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = '私のテストサイト'
 
-export default ( { children, home } ) => {
+
+
+export default ( { children, home, homs } ) => {
     return (
         <div className={ styles.container }>
             <Head>
@@ -25,7 +27,8 @@ export default ( { children, home } ) => {
                 <meta name="og:title" content={ siteTitle } />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <header className={ styles.header}>
+            { homs }
+            <header className={ styles.header }>
                 { home ? (
                     <>
                         <img
@@ -39,11 +42,7 @@ export default ( { children, home } ) => {
                         <>
                             <Link href="/">
                                 <a>
-                                    <img
-                                        src="/images/profile.png"
-                                        className={ `${ styles.headerImage } ${ utilStyles.borderCircle }` }
-                                        alt={ name }
-                                    />
+                                    下層ページなので
                                 </a>
                             </Link>
                             <h2 className={ utilStyles.headingLg }>
@@ -54,7 +53,10 @@ export default ( { children, home } ) => {
                         </>
                     ) }
             </header>
-            { children}
+            { children }
+            <footer className={ styles.footer }>
+                <button className={ styles.btnstyle }>footerボタン</button>
+            </footer>
         </div>
     )
 }
