@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { getSortedPostsData } from "../lib/posts"
+import testswr from '../lib/swr'
 
 export async function getStaticProps () { //getStaticPropsはサーバサイドでのみ 実行される
   const allPostsData = getSortedPostsData()
@@ -14,6 +15,9 @@ export async function getStaticProps () { //getStaticPropsはサーバサイド�
 }
 
 export default function Home ( { allPostsData } ) {
+
+  console.log( testswr() );
+
   return (
     <Layout home homs>
       <Head>
