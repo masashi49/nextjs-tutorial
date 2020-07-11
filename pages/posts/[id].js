@@ -14,13 +14,16 @@ export default function Post ( { postData } ) {
       <Head>
         <title>{ postData.title }</title>
       </Head>
-      { postData.title }
-      <br />
-      { postData.id }
-      <br />
-      { postData.date }
-      <br />
+      日付{ postData.date } : <Date dateString={ postData.date } /> , 記事ID : { postData.id }
+      <br /><br />
+            タイトル : { postData.title }
+      <br /><br />
+            記事内容 : <br />
       <div dangerouslySetInnerHTML={ { __html: postData.contentHtml } }></div>
+      <br />
+      <br />
+      <br />
+
       <textarea cols="30" rows="10" onChange={ textAreaData } />
       <p dangerouslySetInnerHTML={ { __html: state } }></p>
       { state }
