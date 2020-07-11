@@ -36,7 +36,7 @@ export default function Home ( { allPostsData } ) {
             <li className={ utilStyles.listItem } key={ id }>
               { title }
               <br />
-              <Link href={`/posts/${id}`}><a>{ id }</a></Link>
+              <Link href={ `/posts/${ id }` }><a>{ id }</a></Link>
               <br />
               { date }
             </li>
