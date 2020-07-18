@@ -18,7 +18,7 @@ export default function Post ( { postData } ) {
       <br /><br />
             タイトル : { postData.title }
       <br /><br />
-            記事内容 : <br />
+            記事内容 : :::<br />
       <div dangerouslySetInnerHTML={ { __html: postData.contentHtml } }></div>
       <br />
       <br />
