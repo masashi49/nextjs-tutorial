@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'ジェイエス太郎です'
-export const siteTitle = '私のテストサイトaaaaaaaaaaa'
+export const siteTitle = 'こんにいとぁ'
 
 
 
